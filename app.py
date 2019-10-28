@@ -4,9 +4,9 @@ app = Flask(__name__)
 # CORS(app) #Prevents CORS errors
 
 
-@app.route('/')
+@app.route('/app')
 def index():
-    return 'Hello, World!'
+    return 'The Flask app works!'
 
 
 if __name__ == '__main__':
