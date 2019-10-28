@@ -10,6 +10,9 @@ python3 -m virtualenv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 
+# Start gunicorn
+gunicorn --workers 3 --bind unix:app.sock -m 007 wsgi:app
+
 # Run the app
 chmod a+x app.py
 nohup ./app.py &
