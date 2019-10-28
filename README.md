@@ -8,6 +8,8 @@ https://www.kaggle.com/rounakbanik/pokemon).
 ## How to launch?
 Spin up some AWS instance and run
 ```bash
+git clone https://github.com/jkoscialkowski/simple-web-app.git
+cd simple-web-app
 sudo init.sh
 ``` 
 
